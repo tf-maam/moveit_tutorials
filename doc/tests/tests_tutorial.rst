@@ -76,7 +76,7 @@ and run the special `_coverage` target::
   sudo apt install ros-noetic-code-coverage
   catkin config --cmake-args -DENABLE_COVERAGE_TESTING=ON -DCMAKE_BUILD_TYPE=Debug
   catkin build
-  catkin build moveit_core -v --no-deps --catkin-make-args moveit_core_coverage
+  catkin test moveit_core -v --no-deps --catkin-make-args moveit_core_coverage
 
 The output will print where the coverage report is located and it looks similar to the following image:
 
